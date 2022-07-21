@@ -2,11 +2,7 @@
 
 Este Repositório hospeda os seguintes items 
 
-  * Loja Vtex: Usa componente de pontuação para premiar e gamificar a 
-    experiência do usuário ao fazer uma compra. A loja é feita com store 
-    blocks usando JSON para compor os blocos e a  UI. 
-  * Api Rewards: Defini a pontuação do usuario por meio de Débito de pontos 
-  * Api Get Rewards: Lê a pontuação de um usuário logado
+  * Api DebitRewardPOints, hospedada na aws com route53 e dominio proprio, atuando sob o endpoint: https://rewardsapi.tk/rewards-api/v1/
 
 ## Autores 
 
