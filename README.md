@@ -1,4 +1,4 @@
-#  **DebitRewardsPoints API
+#  **DebitRewardsPoints API**
 
   * Api DebitRewardPOints: hospedada na aws com route53 e dominio proprio, 
     atuando sob o endpoint: http://rewardsdebitapi.tk/rewards-debitapi/v1
