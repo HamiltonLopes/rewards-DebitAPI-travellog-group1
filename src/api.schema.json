@@ -13,7 +13,7 @@
   },
   "servers": [
     {
-      "url": " http://localhost:3000/rewards-debitApi/v1",
+      "url": "http://localhost:3000/rewards-debitApi/v1",
       "description": "Local server"
     }
   ],
@@ -89,6 +89,51 @@
           
         }
       }
+    },
+    "/points/clientId": {
+      "get": {
+        "description": "Get Points",
+        "operationId": "Get Points",
+        "parameters": [
+          {
+            "name": "clientId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "exemple": "3f2cbbd5-cfdf-4bc2-a26b-b6dc1cd23ea9"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The user rewards points",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetPoints"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Not Found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                },
+                "example": {
+                  "message": "Invalid parameters",
+                  "code": "400",
+                  "error": 
+                    "Bad Request"
+                }
+              }
+            }
+          }
+        }
+      }
     }
   },
   "components": {
@@ -127,6 +172,15 @@
         }
       },
       "Points": {
+        "type": "object",
+        "properties": {
+          "Points": {
+            "type": "number",
+            "example": 9000
+          }
+        }  
+      },
+      "GetPoints": {
         "type": "object",
         "properties": {
           "Points": {

@@ -7,6 +7,7 @@ import { Router } from 'express';
 import * as OpenApiValidator from 'express-openapi-validator';
 
 const apiSchema = JSON.parse( await readFile(new URL('./api.schema.json', import.meta.url)));
+
 import swaggerUi from 'swagger-ui-express';
 
 
@@ -31,8 +32,8 @@ import swaggerUi from 'swagger-ui-express';
     }
 
     async docsSetup () {
-      this.server.use(`/${this.appName}/${this.appVersion}/docs`, swaggerUi.serve, swaggerUi.setup(apiSchema));
-      this.server.use(OpenApiValidator.middleware({ apiSpec: apiSchema }))
+      this.server.use(`/${this.appName}/${this.appVersion}/docs`, swaggerUi.serveFiles(apiSchema), swaggerUi.setup(apiSchema));
+      //this.server.use(OpenApiValidator.middleware({ apiSpec: apiSchema }))
     }
 
     routes(){
@@ -42,7 +43,7 @@ import swaggerUi from 'swagger-ui-express';
 
     start () {
       this.server.listen(this.port, () => console.log(`
-          Server runing on 🤓
+        🤓 Server runing on 
           http://${this.url}:${this.port}/${this.appName}/${this.appVersion}
           `))
     }
