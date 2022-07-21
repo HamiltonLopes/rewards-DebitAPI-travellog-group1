@@ -8,14 +8,10 @@ Este Repositório hospeda os seguintes items
   * Api Rewards: Defini a pontuação do usuario por meio de Débito de pontos 
   * Api Get Rewards: Lê a pontuação de um usuário logado
 
-## Team 
+## Autores 
 
-  * [Hamilton Lopes](https://www.linkedin.com/in/hamilton-lopes/)
-  * [Hamiceis Pereira](https://www.linkedin.com/in/hamiceis-pereira/)
-  * [Marlon Matos](https://www.linkedin.com/in/marlonmatos/)
-  * [Jean Fraga](https://www.linkedin.com/in/jean-fraga/)
-  * [Marco Antonio](https://www.linkedin.com/in/marco-antonio-pereira-esteves-005185113/)
-  * [Lucas Macedo](https://www.linkedin.com/in/lucassmacedo/)
+  * [Hamilton Lopes](https://www.linkedin.com/in/hamilton-lopes/) - Construção e upload
+  * [Jean Fraga](https://www.linkedin.com/in/jean-fraga/) - Documentação
 
 ## Vtex-Store
 
