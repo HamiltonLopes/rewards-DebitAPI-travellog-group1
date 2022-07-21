@@ -1,6 +1,4 @@
-#  **Challenge VtexIo**
-
-Este Repositório hospeda os seguintes items 
+#  **DebitRewardsPoints API
 
   * Api DebitRewardPOints: hospedada na aws com route53 e dominio proprio, 
     atuando sob o endpoint: http://rewardsdebitapi.tk/rewards-debitapi/v1
