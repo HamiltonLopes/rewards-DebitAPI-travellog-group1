@@ -2,7 +2,7 @@
 
 Este Repositório hospeda os seguintes items 
 
-  * Api DebitRewardPOints, hospedada na aws com route53 e dominio proprio, 
+  * Api DebitRewardPOints: hospedada na aws com route53 e dominio proprio, 
     atuando sob o endpoint: https://rewardsapi.tk/rewards-api/v1/
 
 ## Autores 
